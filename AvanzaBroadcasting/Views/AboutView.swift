@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AboutView: View {
+    
     var body: some View {
             ZStack {
                 Color("ColorGrey")
@@ -21,6 +22,10 @@ struct AboutView: View {
                     
                     Button(action: {
                         //Action
+                        let websiteLink = "https://avanzaradio.wixsite.com/avanza"
+                        let url: NSURL = URL(string: websiteLink)! as NSURL
+                        
+                        UIApplication.shared.open(url as URL)
                     }) {
                         Text("Visita Nuestra Web")
                             .font(.system(size: 20))

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3403618727BEE46B00FF7590 /* image.json in Resources */ = {isa = PBXBuildFile; fileRef = 3403618627BEE46B00FF7590 /* image.json */; };
 		34043CDC27BAA29100896882 /* CircleGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34043CDB27BAA29100896882 /* CircleGroupView.swift */; };
+		34081BED27BFE4970027AEF4 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34081BEC27BFE4970027AEF4 /* WebView.swift */; };
 		340A0C9627BD3EDB00562349 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340A0C9527BD3EDB00562349 /* AboutView.swift */; };
 		340F883727B9CD8400E30455 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F883627B9CD8400E30455 /* Helper.swift */; };
 		344F3ED227BBF2CE00A0938D /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344F3ED127BBF2CE00A0938D /* DataModel.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		3403618627BEE46B00FF7590 /* image.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = image.json; sourceTree = "<group>"; };
 		34043CDB27BAA29100896882 /* CircleGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleGroupView.swift; sourceTree = "<group>"; };
+		34081BEC27BFE4970027AEF4 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		340A0C9527BD3EDB00562349 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		340F883627B9CD8400E30455 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		344F3ED127BBF2CE00A0938D /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				3498594A279CE19A005ED74C /* AvanzaBroadcastingApp.swift */,
 				340A0C9427BD3EA700562349 /* Views */,
 				340F883627B9CD8400E30455 /* Helper.swift */,
+				34081BEC27BFE4970027AEF4 /* WebView.swift */,
 				344F3ED127BBF2CE00A0938D /* DataModel.swift */,
 				344F3ED527BBF57500A0938D /* quotes.json */,
 				3403618627BEE46B00FF7590 /* image.json */,
@@ -171,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				344F3ED227BBF2CE00A0938D /* DataModel.swift in Sources */,
+				34081BED27BFE4970027AEF4 /* WebView.swift in Sources */,
 				340A0C9627BD3EDB00562349 /* AboutView.swift in Sources */,
 				3498594D279CE19A005ED74C /* ContentView.swift in Sources */,
 				3498594B279CE19A005ED74C /* AvanzaBroadcastingApp.swift in Sources */,
@@ -304,6 +308,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AvanzaBroadcasting/Preview Content\"";
@@ -335,6 +340,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AvanzaBroadcasting/Preview Content\"";
