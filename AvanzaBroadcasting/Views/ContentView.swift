@@ -27,12 +27,12 @@ struct ContentView: View {
     @State private var isAnimating: Bool = false
     @State var isAboutViewShowing = false
     
+    @State private var imageBackground : ImageBackground?
+    
     var body: some View {
         
         ZStack {
-            Color("ColorBlue")
-                .ignoresSafeArea(.all, edges: .all)
-            
+            let imageBackground = imageBackground
             VStack {
                 // MARK: - HEADER
                 ZStack{
@@ -134,8 +134,17 @@ struct ContentView: View {
 //                }
             }//: VSTACK
         }//: ZSTACK
+        .background(
+            Image((imageBackground != nil) ? imageBackground?.name as! String : "image-0")
+                    .ignoresSafeArea(.all, edges: .all)
+                    .colorMultiply(.gray)
+                    
+        )
+        
         .onAppear(perform: {
             isAnimating = true
+            let imagesBackground = Bundle.main.decode([ImageBackground].self, from: "image.json")
+                imageBackground = imagesBackground.randomElement()
         })
     }
         

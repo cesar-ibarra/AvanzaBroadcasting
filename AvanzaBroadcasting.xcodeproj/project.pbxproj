@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3403618727BEE46B00FF7590 /* image.json in Resources */ = {isa = PBXBuildFile; fileRef = 3403618627BEE46B00FF7590 /* image.json */; };
 		34043CDC27BAA29100896882 /* CircleGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34043CDB27BAA29100896882 /* CircleGroupView.swift */; };
 		340A0C9627BD3EDB00562349 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340A0C9527BD3EDB00562349 /* AboutView.swift */; };
 		340F883727B9CD8400E30455 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F883627B9CD8400E30455 /* Helper.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3403618627BEE46B00FF7590 /* image.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = image.json; sourceTree = "<group>"; };
 		34043CDB27BAA29100896882 /* CircleGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleGroupView.swift; sourceTree = "<group>"; };
 		340A0C9527BD3EDB00562349 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		340F883627B9CD8400E30455 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				340F883627B9CD8400E30455 /* Helper.swift */,
 				344F3ED127BBF2CE00A0938D /* DataModel.swift */,
 				344F3ED527BBF57500A0938D /* quotes.json */,
+				3403618627BEE46B00FF7590 /* image.json */,
 				3498594E279CE19B005ED74C /* Assets.xcassets */,
 				34985950279CE19B005ED74C /* Preview Content */,
 			);
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34985952279CE19B005ED74C /* Preview Assets.xcassets in Resources */,
+				3403618727BEE46B00FF7590 /* image.json in Resources */,
 				3498594F279CE19B005ED74C /* Assets.xcassets in Resources */,
 				344F3ED627BBF57500A0938D /* quotes.json in Resources */,
 			);
