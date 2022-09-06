@@ -14,6 +14,8 @@ struct AboutView: View {
                 Color("ColorGrey")
                     .ignoresSafeArea(.all, edges: .all)
                 VStack {
+                    LottieView(filename: "slide-down")
+                        .frame(width: 200, height: 200)
                     Spacer()
                     Image("avanzalogo")
                         .resizable()
@@ -22,6 +24,7 @@ struct AboutView: View {
                     
                     Button(action: {
                         //Action
+                        // website url
                         let websiteLink = "https://avanzaradio.wixsite.com/avanza"
                         let url: NSURL = URL(string: websiteLink)! as NSURL
                         

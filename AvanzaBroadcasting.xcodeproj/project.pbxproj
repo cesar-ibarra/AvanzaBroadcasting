@@ -23,6 +23,7 @@
 		3498594D279CE19A005ED74C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3498594C279CE19A005ED74C /* ContentView.swift */; };
 		3498594F279CE19B005ED74C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3498594E279CE19B005ED74C /* Assets.xcassets */; };
 		34985952279CE19B005ED74C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34985951279CE19B005ED74C /* Preview Assets.xcassets */; };
+		34BEAA8F28B01FA200421698 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 34BEAA8E28B01FA200421698 /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34095F1C27D432ED00BD85CA /* Lottie in Frameworks */,
+				34BEAA8F28B01FA200421698 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +140,7 @@
 			name = AvanzaBroadcasting;
 			packageProductDependencies = (
 				34095F1B27D432ED00BD85CA /* Lottie */,
+				34BEAA8E28B01FA200421698 /* Lottie */,
 			);
 			productName = AvanzaBroadcasting;
 			productReference = 34985947279CE19A005ED74C /* AvanzaBroadcasting.app */;
@@ -169,6 +172,7 @@
 			mainGroup = 3498593E279CE19A005ED74C;
 			packageReferences = (
 				34095F1A27D432ED00BD85CA /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				34BEAA8D28B01FA200421698 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 34985948279CE19A005ED74C /* Products */;
 			projectDirPath = "";
@@ -349,7 +353,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -382,7 +386,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -429,12 +433,25 @@
 				kind = branch;
 			};
 		};
+		34BEAA8D28B01FA200421698 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		34095F1B27D432ED00BD85CA /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 34095F1A27D432ED00BD85CA /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		34BEAA8E28B01FA200421698 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34BEAA8D28B01FA200421698 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */

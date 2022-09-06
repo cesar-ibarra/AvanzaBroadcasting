@@ -11,6 +11,7 @@ import AVFoundation
 
 struct ContentView: View {
     func playSound() {
+        //streaming url
         soundManager.playSound(sound: "https://icecasthd.net:2199/tunein/davidrecords.pls")
         playAudioBackground()
         audioPlay.toggle()
@@ -32,12 +33,10 @@ struct ContentView: View {
     var body: some View {
         
         ZStack {
-            let imageBackground = imageBackground
+//            let imageBackground = imageBackground
             VStack {
                 // MARK: - HEADER
                 ZStack{
-                    Color("ColorGrey")
-                        .ignoresSafeArea(.all, edges: .all)
                     Image("avanzalogo")
                         .resizable()
                         .scaledToFit()
@@ -104,34 +103,6 @@ struct ContentView: View {
                 .sheet(isPresented: $isAboutViewShowing) {
                     AboutView()
                 }
-                
-                
-                
-//                ZStack{
-//                    //: 1. BACKGROUND (STATIC)
-//                    Capsule()
-//                        .fill(Color.white.opacity(0.2))
-//
-//                    Capsule()
-//                        .fill(Color.white.opacity(0.2))
-//                        .padding(8)
-//
-////                    : 2. GOOGLE ADS
-//
-//                        Text("Acerca de Nosotros")
-//                            .font(.system(size: 25))
-//                            .foregroundColor(.white)
-//
-//                }//: ZSTACK FOOTER
-//                .frame(height: 80, alignment: .center)
-//                .padding()
-//                .onTapGesture {
-//                    // Action here
-//                    isAboutViewShowing = true
-//                }
-//                .sheet(isPresented: $isAboutViewShowing) {
-//                    AboutView()
-//                }
             }//: VSTACK
         }//: ZSTACK
         .background(
