@@ -12,7 +12,7 @@ import AVFoundation
 struct ContentView: View {
     func playSound() {
         //streaming url
-        soundManager.playSound(sound: "https://icecasthd.net:2199/tunein/davidrecords.pls")
+        soundManager.playSound(sound: "YOUR_URL")
         playAudioBackground()
         audioPlay.toggle()
         
